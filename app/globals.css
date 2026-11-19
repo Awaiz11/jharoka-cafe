@@ -684,11 +684,25 @@ a {
     gap: 1rem;
   }
   .hero__copy {
-    padding-bottom: 1rem;
+    padding-bottom: 3.5rem;
   }
+  /* On small screens the window comes first, so the shutters open in view */
   .hero__window {
+    order: -1;
     justify-self: center;
-    width: min(100%, 400px);
+    width: min(62vw, 300px);
+    margin-top: 0.5rem;
+  }
+  .hero__arch {
+    aspect-ratio: 3 / 3.7;
+  }
+  .hero__sill {
+    height: 12px;
+    margin-inline: -8px;
+    box-shadow: 0 -4px 0 var(--ochre) inset;
+  }
+  .hero__urdu {
+    margin-top: 0.35em;
   }
   .story__grid,
   .menu__body,
